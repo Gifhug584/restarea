@@ -1,4 +1,4 @@
 # Developer Resources
 
 # 2/27/2026
-Todo: add games
+make js stuff
