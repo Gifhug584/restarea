@@ -1,0 +1,4 @@
+div {
+  position: fixed;
+  bottom: 10px; /* Stays 10px from the bottom of the screen */
+}
