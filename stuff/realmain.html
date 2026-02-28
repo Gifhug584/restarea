@@ -20,22 +20,18 @@
       <h1>Licence</h1>
       <a href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/2026licence.txt">here</a>
       <h1>Music</h1>
-        <audio id="musicPlayer" controls>
-    <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+      <script>
+          const element = document.getElementById("audio");
+          function next() {
+                element.src = "https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Elevator%20Music.mp3";
+              element.onend = "next2()"
+          }
+          function next2() {
+                element.src = "https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3";
+              element.onend = "next()"
+          }
+      </script>
+        <audio id="audio" src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" autoplay controls onend="next()">
   </div>
-        <script>
-    // Simple JavaScript for playlist functionality
-    var audio = document.getElementById('musicPlayer');
-    var playlist = ['https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3''https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Elevator%20Music.mp3''https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Wii%20Shop%20Bossa%20Nova%20Cover.mp3'];
-    var currentTrack = 0;
-
-    audio.addEventListener('ended', function() {
-        currentTrack = (currentTrack + 1) % playlist.length;
-        audio.src = playlist[currentTrack];
-        audio.play();
-    });
-</script>
 </body>
 </html>
