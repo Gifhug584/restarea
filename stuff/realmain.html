@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>const audioPlayer = document.getElementById('audio-player');
+const playlist = document.getElementById('playlist');
+
+playlist.addEventListener('click', function(e) {
+  if (e.target.tagName === 'LI') {
+    const newSrc = e.target.getAttribute('data-src');
+    audioPlayer.src = newSrc;
+    audioPlayer.play();
+  }
+});
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/css/main.css">
@@ -8,6 +19,7 @@
     <title>bread area</title>
 </head>
 <body>
+    <h4>The kind of website you probably see in web randomizers</h4>
   /<a href="https://github.com/Gifhug584/restarea">source</a>
   /<a href="a/index.html">stuff</a>
   <div id="a", style="background-color: lightgray; padding: 20px;">
@@ -17,6 +29,17 @@
       <a href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/sourbread1.webp">sourdough</a>
       <h1>Licence</h1>
       <a href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/2026licence.txt">here</a>
+      <h1>Music</h1>
+      <div class="player">
+       <audio autoplay loop id="audio-player" controls>
+              <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" type="audio/mpeg">
+        </audio>
+      <ul id="playlist">
+            <li data-src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3">elevator bossa nova</li>
+            <li data-src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Elevator%20Music.mp3">elevator music</li>
+            <li data-src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Wii%20Shop%20Bossa%20Nova%20Cover.mp3">wii shop</li>
+        </ul>
+    </div>
   </div>
 </body>
 </html>
