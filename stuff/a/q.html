@@ -2,12 +2,32 @@
 <html>
 <head>
     <script>
-    function goFullscreen() {
-      document.documentElement.requestFullscreen();
-    }
-        while (x > 0) {
-            goFullscreen()
-        }
+const elem = document.documentElement;
+
+function enterFullscreen() {
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch(() => {});
+  }
+}
+
+document.getElementById("acceptBtn").addEventListener("click", () => {
+  enterFullscreen();
+});
+
+// Re-enter if user exits fullscreen
+document.addEventListener("fullscreenchange", () => {
+  if (!document.fullscreenElement) {
+    setTimeout(enterFullscreen, 100);
+  }
+});
+
+// Optional: block F11 (not guaranteed in all browsers)
+document.addEventListener("keydown", (e) => {
+  if (e.key === "F11") {
+    e.preventDefault();
+    enterFullscreen();
+  }
+});
 </script>
     <title>vercal</title>
 </head>
