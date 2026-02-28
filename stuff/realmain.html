@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>const audioPlayer = document.getElementById('audio-player');
-const playlist = document.getElementById('playlist');
+<audio loop autoplay>
+    <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" type="audio/mpeg">
+</audio>
 
-playlist.addEventListener('click', function(e) {
-  if (e.target.tagName === 'LI') {
-    const newSrc = e.target.getAttribute('data-src');
-    audioPlayer.src = newSrc;
-    audioPlayer.play();
-  }
-});
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +26,5 @@ playlist.addEventListener('click', function(e) {
       <h1>Music</h1>
         <p>elevator bossa nova</p>
   </div>
-        <audio autoplay loop>
-          <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" type="audio/mpeg" />
-        </audio>
 </body>
 </html>
