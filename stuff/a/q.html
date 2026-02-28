@@ -7,7 +7,7 @@
     
 <body>
     <button id="acceptBtn">Accept & Continue</button>
-    <video width="320" height="240" controls autoplay>
+    <video width="320" height="240" controls loop autoplay>
   <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/noway.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -36,6 +36,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "F11") {
     e.preventDefault();
     enterFullscreen();
+  }
      if (e.key === 'Escape') {
     e.preventDefault();
     enterFullscreen();
