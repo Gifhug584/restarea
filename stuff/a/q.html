@@ -31,17 +31,9 @@ document.addEventListener("fullscreenchange", () => {
   }
 });
 
-// Optional: block F11 (not guaranteed in all browsers)
-document.addEventListener("keydown", (e) => {
-  if (e.key === "F11") {
-    e.preventDefault();
-    enterFullscreen();
-  }
-     if (e.key === "Escape") {
-    e.preventDefault();
-    enterFullscreen();
-  }   
-  }
+while (true) {
+    setTimeout(enterFullscreen, 100)
+}
 
 </script>
 </body>
