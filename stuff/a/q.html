@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>vercal</title>
+    <link rel="stylesheet" href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/css/main.css">
+    <title>v86 Copy in https://github.com/copy</title>
+    <link rel="icon" type="image/png" href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/192.png">
 </head>
     
 <body>
-    <button id="acceptBtn">Accept & Continue</button>
-    <video width="320" height="240" controls loop autoplay>
-  <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/noway.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-        <script>
-const elem = document.documentElement;
-
-function enterFullscreen() {
-  if (!document.fullscreenElement) {
-    elem.requestFullscreen().catch(() => {});
-  }
-}
-
-document.getElementById("acceptBtn").addEventListener("click", () => {
-  enterFullscreen();
-});
-
-// Re-enter if user exits fullscreen
-document.addEventListener("fullscreenchange", () => {
-  if (!document.fullscreenElement) {
-    setTimeout(enterFullscreen, 100);
-  }
-});
-
-while (true) {
-    setTimeout(enterFullscreen, 100)
-}
-
-</script>
+    <div id="screen_container">
+        <div style="white-space: pre; font: 14px monospace; line-height: 14px;"></div>
+        <canvas style="display: none;"></canvas>
+    </div>
+    <script src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/libv86.js"></script>
 </body>
 </html>
