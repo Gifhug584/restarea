@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<audio loop autoplay>
-    <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" type="audio/mpeg">
-</audio>
+    <script>
+    // Simple JavaScript for playlist functionality
+    var audio = document.getElementById('musicPlayer');
+    var playlist = ['https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3''https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Elevator%20Music.mp3''https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Wii%20Shop%20Bossa%20Nova%20Cover.mp3'];
+    var currentTrack = 0;
 
+    audio.addEventListener('ended', function() {
+        currentTrack = (currentTrack + 1) % playlist.length;
+        audio.src = playlist[currentTrack];
+        audio.play();
+    });
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +31,10 @@
       <h1>Licence</h1>
       <a href="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/2026licence.txt">here</a>
       <h1>Music</h1>
-        <p>elevator bossa nova</p>
+        <audio id="musicPlayer" controls>
+    <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/music/Bensound%20-%20Elevator%20Bossa%20Nova.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
   </div>
 </body>
 </html>
