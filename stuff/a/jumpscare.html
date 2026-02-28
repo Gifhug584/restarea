@@ -1,11 +1,12 @@
 
 <script>
-  document.requestFullscreen();
+  var elem = document.documentElement;
+  elem.requestFullScreen();
   function ok() {
       window.location.href="breadarea.vercel.app"
   }
 </script>
-<audio onended="ok()">
+<audio autoplay onended="ok()">
     <source src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/jumpscare.mp3" type="audio/mpeg">
 </audio>
 <img src="https://xyj9opvaj2zdupae.public.blob.vercel-storage.com/sourdough/breadjumpscare.png" alt="alaa">
