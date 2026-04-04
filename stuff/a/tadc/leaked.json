@@ -1,0 +1,395 @@
+{
+  "applications": {
+    "675bbcef-18d8-41f5-800e-131ec9e08762": {
+      "wixCode": {
+        "compId": "wixCode",
+        "controllerType": "wixCode",
+        "applicationId": "675bbcef-18d8-41f5-800e-131ec9e08762",
+        "appDefinitionId": "675bbcef-18d8-41f5-800e-131ec9e08762",
+        "externalId": ""
+      }
+    }
+  },
+  "connections": {
+    "wixCode": {
+      "imageX2": [
+        {
+          "compId": "comp-mm3tcmj8",
+          "role": "imageX2"
+        }
+      ],
+      "imageX1": [
+        {
+          "compId": "comp-mm3s218v",
+          "role": "imageX1"
+        }
+      ],
+      "expandableMenu1": [
+        {
+          "compId": "comp-mm3rofj0_r_comp-kd5px9kk",
+          "role": "expandableMenu1"
+        }
+      ],
+      "vectorImage1": [
+        {
+          "compId": "comp-mm3rofj0_r_comp-kkmqi5tc",
+          "role": "vectorImage1"
+        }
+      ],
+      "page1": [
+        {
+          "compId": "dbmsr",
+          "role": "page1"
+        }
+      ],
+      "section4": [
+        {
+          "compId": "comp-mm3rofa9",
+          "role": "section4"
+        }
+      ],
+      "menuContainer1": [
+        {
+          "compId": "comp-mm3rofj0_r_comp-kd5px9hr",
+          "role": "menuContainer1"
+        }
+      ]
+    }
+  },
+  "controllerConfigs": {
+    "675bbcef-18d8-41f5-800e-131ec9e08762": {
+      "wixCode": {
+
+      }
+    }
+  },
+  "orderedControllers": [],
+  "sdkData": {
+    "comp-mm3rofj0_r_comp-kd5px9kk": {
+      "pageList": {
+        "nominees-zooble": {
+          "id": "b5x3k",
+          "title": "Nominees | Zooble"
+        },
+        "vote4": {
+          "id": "d1pvp",
+          "title": "Phase 4 (OLD)"
+        },
+        "cubertdubert543211135451": {
+          "id": "d5vq4",
+          "title": "TEST HOME"
+        },
+        "asgtasgasgsagashdsxh": {
+          "id": "dbmsr",
+          "title": "TheWackyWatch"
+        },
+        "vote5": {
+          "id": "f57af",
+          "title": "ThE AwArDs ShOw!!!!!!!!!!!!!!!!!!!!!!!!"
+        },
+        "nominees-caine": {
+          "id": "fbzrb",
+          "title": "Nominees | Caine"
+        },
+        "nominees-gangle": {
+          "id": "h6l64",
+          "title": "Nominees | Gangle"
+        },
+        "nominees-pomni": {
+          "id": "hb36i",
+          "title": "Nominees | Pomni"
+        },
+        "nominees-jax": {
+          "id": "iqsqo",
+          "title": "Nominees | Jax"
+        },
+        "cainepaint": {
+          "id": "mhrrw",
+          "title": "TheWackyWatch"
+        },
+        "vote2-1": {
+          "id": "ol7xj",
+          "title": "THE AWARDS SHOW!!!!"
+        },
+        "curtains": {
+          "id": "py1lq",
+          "title": "TheWackyWatch"
+        },
+        "vote41": {
+          "id": "q6s70",
+          "title": "THE AWARDS SHOW!!!!!!"
+        },
+        "vote3": {
+          "id": "rrzfd",
+          "title": "Phase 3 (OLD)"
+        },
+        "nominees-kinger": {
+          "id": "t34n5",
+          "title": "Nominees | Kinger"
+        },
+        "vote2": {
+          "id": "tzrow",
+          "title": "Phase 2 (OLD)"
+        },
+        "nominees-ragatha": {
+          "id": "umes2",
+          "title": "Nominees | Ragatha"
+        },
+        "vote3-1": {
+          "id": "uq0le",
+          "title": "THE AWARDS SHOW!!!!!"
+        },
+        "vote1": {
+          "id": "v6lep",
+          "title": "THE AWARDS SHOW!!!"
+        },
+        "vote41-1": {
+          "id": "vne7g",
+          "title": "ThE AwArDs ShOw!!!!!!!"
+        },
+        "blank": {
+          "id": "xm5w6",
+          "title": "OLD/TEST"
+        },
+        "blank/gfdjflkdfjldkfj3l4kj23l": {
+          "id": "y39xm",
+          "title": "Phase4(OLD)",
+          "parentPageId": "xm5w6"
+        },
+        "vote111111": {
+          "id": "z8x5g",
+          "title": "Phase 1 (OLD)"
+        }
+      }
+    },
+    "comp-mm3rofj0_r_comp-kkmqi5tc": {
+      "isResponsive": true,
+      "svgId": {
+        "content": "\u003C?xml version=\"1.0\" encoding=\"UTF-8\"?\u003E\r\n\u003Csvg data-bbox=\"65.35 65.35 69.3 69.3\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\" data-type=\"shape\"\u003E\n    \u003Cg\u003E\n        \u003Cpath d=\"M134.65 128.99L105.66 100l28.99-28.99-5.66-5.66L100 94.34 71.01 65.35l-5.66 5.66L94.34 100l-28.99 28.99 5.66 5.66L100 105.66l28.99 28.99 5.66-5.66z\"/\u003E\n    \u003C/g\u003E\n\u003C/svg\u003E\n",
+        "info": {
+          "svgType": "shape",
+          "viewBox": "0 0 200 200",
+          "bbox": "65.35 65.35 69.3 69.3"
+        },
+        "boxBoundaries": {
+          "x": "65.35",
+          "y": "65.35",
+          "width": "69.3",
+          "height": "69.3"
+        },
+        "svgId": "1d3a0b_97d72ad4c8dc4903bfb02b2baa7763ae.svg"
+      },
+      "altText": "Close Site Navigation",
+      "compId": "comp-mm3rofj0_r_comp-kkmqi5tc",
+      "strokeWidth": 0,
+      "properties": {
+        "type": "VectorImageProperties",
+        "metaData": {
+          "schemaVersion": "1.0",
+          "sig": "6c2-59",
+          "autoGenerated": false
+        },
+        "id": "comp-mm3rofj0_r_comp-kkmqi5tc-propertyQuery",
+        "displayMode": "stretch",
+        "flip": "none"
+      },
+      "layout": {
+        "width": 160,
+        "height": 90
+      },
+      "shadow": {
+
+      },
+      "colorsMap": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#ED1C24",
+        "#0088CB",
+        "#FFCB05",
+        "#727272",
+        "#B0B0B0",
+        "#FFFFFF",
+        "#727272",
+        "#B0B0B0",
+        "#FFFFFF",
+        "#F0F0F0",
+        "#C2C2C2",
+        "#6E6E6E",
+        "#000000",
+        "#DCE8FF",
+        "#93212E",
+        "#1A6AFF",
+        "#094BCC",
+        "#B00017",
+        "#3A0108",
+        "#02190E",
+        "#135B32",
+        "#618741",
+        "#39641D",
+        "#F2EAE7",
+        "#E5CEC0",
+        "#A9806F",
+        "#8B614F",
+        "#633C2B",
+        "#FFE9DF",
+        "#FFBFA1",
+        "#FA854F",
+        "#EA6020",
+        "#C94001",
+        "#FFFFFF",
+        "#000000",
+        "#F0F0F0",
+        "#C2C2C2",
+        "#6E6E6E",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#000000",
+        "#6E6E6E",
+        "#000000",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#FFFFFF",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#FFFFFF",
+        "#C2C2C2",
+        "#C2C2C2",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#FFFFFF",
+        "#1A6AFF",
+        "#1A6AFF",
+        "#FFFFFF",
+        "#C2C2C2",
+        "#C2C2C2"
+      ],
+      "overrideColors": {
+        "color1": "color_15"
+      },
+      "mediaSvgUrl": "https://static.wixstatic.com/shapes/"
+    },
+    "dbmsr": {
+      "currentPageSEODescription": "",
+      "currentPageSEOKeywords": "",
+      "currentUrlPageTitle": "",
+      "visibleInMenu": true
+    },
+    "comp-mm3rofa9": {
+      "initialSdkStyles": {
+        "backgroundColor": "rgb(0, 0, 0)"
+      }
+    }
+  },
+  "staticEvents": [],
+  "compIdConnections": {
+    "comp-mm3tcmj8": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "imageX2",
+        "controllerCompId": "wixCode"
+      }
+    },
+    "comp-mm3s218v": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "imageX1",
+        "controllerCompId": "wixCode"
+      }
+    },
+    "comp-mm3rofj0_r_comp-kd5px9kk": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "expandableMenu1",
+        "controllerCompId": "wixCode"
+      }
+    },
+    "comp-mm3rofj0_r_comp-kkmqi5tc": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "vectorImage1",
+        "controllerCompId": "wixCode"
+      }
+    },
+    "dbmsr": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "page1",
+        "controllerCompId": "wixCode"
+      }
+    },
+    "comp-mm3rofa9": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "section4",
+        "controllerCompId": "wixCode"
+      }
+    },
+    "comp-mm3rofj0_r_comp-kd5px9hr": {
+      "wixCode": {
+        "type": "WixCodeConnectionItem",
+        "role": "menuContainer1",
+        "controllerCompId": "wixCode"
+      }
+    }
+  },
+  "containersChildrenIds": {
+    "dbmsr": [
+      "comp-mm3rofa9",
+      "comp-mm3rofj0"
+    ],
+    "comp-mm3rofa9": [
+      "comp-mm3tcmj8",
+      "comp-mm3s218v"
+    ],
+    "comp-mm3rofj0": [
+      "comp-mm3rofj0_r_comp-kd5px9hr"
+    ],
+    "comp-mm3rofj0_r_comp-kd5px9hr": [
+      "comp-mm3rofj0_r_comp-kd5px9kk",
+      "comp-mm3rofj0_r_comp-kkmqi5tc"
+    ]
+  },
+  "onLoadProperties": {
+
+  },
+  "compIdToRepeaterId": {
+
+  },
+  "sosp": {
+    "pagesToShowSosp": {
+
+    },
+    "controllersInSosp": {
+
+    }
+  },
+  "ghosts": {
+    "structure": {
+
+    },
+    "props": {
+
+    },
+    "parentComponentsUpdates": {
+
+    }
+  },
+  "hasTPAComponentOnPage": false,
+  "hasBlocksWidgetOnPage": false,
+  "allControllersOnPageAreGhosts": false,
+  "responsiveCompsInClassic": {
+
+  },
+  "slots": {
+
+  },
+  "applicationsPublicData": {
+
+  },
+  "isBuilderDocument": false
+}
