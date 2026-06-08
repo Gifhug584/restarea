@@ -3,104 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The fetched web</title>
+    <title>Live Website Content Loader</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-        }
-        #content-container {
-            padding: 20px;
-            border: 2px dashed #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            margin-top: 20px;
-        }
-        .error-msg {
-            color: #d9534f;
-            font-weight: bold;
-        }
+        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; }
+        nav { display: flex; gap: 10px; margin-bottom: 20px; }
+        button { padding: 10px 15px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px; }
+        button:hover { background: #0056b3; }
+        #view-panel { padding: 20px; border: 1px solid #ddd; border-radius: 6px; background: #fafafa; min-height: 150px; }
+        .error { color: #dc3545; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <h1>Dynamic Content Engine</h1>
-    <p>The container below loads content dynamically using JavaScript fetch.</p>
+    <!-- 1. Navigation Menu -->
+    <nav>
+        <button onclick="changePage('https://urainum.neocities.org/archive/localserver/73851df5fd78bee6f1cb6a4bc41a8330a48ce949')">Enter</button>
+    </nav>
 
-    <!-- The placeholder target for incoming HTML content -->
-    <div id="content-container">Loading remote components...</div>
+    <!-- 2. Dynamic Target Container -->
+    <main id="view-panel">TEST</main>
 
     <script>
-        // Config: The path to the file containing your text, HTML, or links
-        const contentSource = 'https://urainum.neocities.org/archive/localserver/73851df5fd78bee6f1cb6a4bc41a8330a48ce949';
-
         /**
-         * Fetches an external HTML fragment and displays it.
-         * @param {string} url - The file path or local link to fetch.
+         * Fetches an HTML component and updates the view panel
+         * @param {string} pageUrl - The relative path of the file to load
          */
-        function loadDynamicHTML(url) {
-            const container = document.getElementById('content-container');
+        function changePage(pageUrl) {
+            const panel = document.getElementById('view-panel');
+            panel.innerHTML = "<em>Loading content...</em>";
 
-            fetch(url)
+            fetch(pageUrl)
                 .then(response => {
-                    // Check if the resource exists
                     if (!response.ok) {
-                        throw new Error(`Could not retrieve file (Status: ${response.status})`);
+                        throw new Error(`File not found (${response.status})`);
                     }
                     return response.text();
                 })
                 .then(htmlString => {
-                    // Inject the string as live HTML elements
-                    container.innerHTML = htmlString;
-                    
-                    // Optional: Run custom setup if you want to handle newly added links
-                    initializeInjectedLinks(container);
+                    panel.innerHTML = htmlString;
                 })
                 .catch(error => {
-                    console.error('Fetch operation failed:', error);
-                    container.innerHTML = `
-                        <p class="error-msg">
-                            ⚠️ Error: Unable to fetch layout. Make sure you are using a local development server.
-                        </p>
-                    `;
+                    console.error('Error:', error);
+                    panel.innerHTML = `<p class="error">⚠️ Could not load the requested page.</p>`;
                 });
         }
 
-        /**
-         * Optional: Inspects and adds custom tracking/behavior to links inside the fetched HTML
-         * @param {HTMLElement} parentContainer 
-         */
-        function initializeInjectedLinks(parentContainer) {
-            const links = parentContainer.getElementsByTagName('a');
-            
-            for (let link of links) {
-                // Ensure external links open securely in a new tab
-                if (link.hostname !== window.location.hostname && link.href.startsWith('http')) {
-                    link.setAttribute('target', '_blank');
-                    link.setAttribute('rel', 'noopener noreferrer');
-                }
-            }
-        }
-
-        // Initialize the fetch when the page finishes loading
+        // Automatically load the home page on first visit
         document.addEventListener('DOMContentLoaded', () => {
-            loadDynamicHTML(contentSource);
+            changePage('');
         });
     </script>
 </body>
 </html>
-Use code with caution.2. The External Content Page (content.html)Create this file in the same folder as index.html. This serves as the content fragment containing elements and functional links.html<div class="dynamic-card">
-    <h2>Successfully Imported Component!</h2>
-    <p>This entire text block and the layout below were injected seamlessly into the page via JavaScript.</p>
-    
-    <h3>Test Links:</h3>
-    <ul>
-        <!-- External web links will open safely in a new tab via the initialization script -->
-        <li><a href="https://wikipedia.org">Go to Wikipedia (External Link)</a></li>
-        <!-- Local links will act normally -->
-        <li><a href="#top">Scroll to Top of Page</a></li>
-    </ul>
-</div>
