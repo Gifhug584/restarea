@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fetchedweb</title>
+</head>
+<body>
+  
+    
+    <div id="html-container">load</div>
+
+    <script>
+    
+      const htmlFileUrl = 'https://urainum.neocities.org/archive/localserver/73851df5fd78bee6f1cb6a4bc41a8330a48ce949';
+
+        
+      fetch(htmlFileUrl)
+            .then(response => {
+               
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+               
+                return response.text();
+            })
+            .then(htmlContent => {
+               
+                document.getElementById('html-container').innerHTML = htmlContent;
+            })
+            .catch(error => {
+               
+                console.error('Failed to fetch HTML:', error);
+                document.getElementById('html-container').innerHTML = 
+                    `<p style="color:red;">Error loading content. Please try again later.</p>`;
+            });
+    </script>
+
+</body>
+</html>
